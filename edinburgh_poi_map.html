@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_873c962b717873609007767420773838 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_873c962b717873609007767420773838" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_873c962b717873609007767420773838 = L.map(
+                "map_873c962b717873609007767420773838",
+                {
+                    center: [55.9533, -3.1883],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cadac9d2c91ec64fd84fc0abd4981cfb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cadac9d2c91ec64fd84fc0abd4981cfb.addTo(map_873c962b717873609007767420773838);
+        
+    
+            var marker_41dde7a7cbf0f53207291de8e978e8cc = L.marker(
+                [55.948611, -3.200833],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_c6d5b83f123da9bee618cf2ead98ffa6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_41dde7a7cbf0f53207291de8e978e8cc.setIcon(icon_c6d5b83f123da9bee618cf2ead98ffa6);
+        
+    
+        var popup_01577c5eb57165eb156aae30c8b362af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb865e824e23329f2b78ddca1138157a = $(`<div id="html_fb865e824e23329f2b78ddca1138157a" style="width: 100.0%; height: 100.0%;"><b>Edinburgh_Castle</b><br>Category: Historical</div>`)[0];
+                popup_01577c5eb57165eb156aae30c8b362af.setContent(html_fb865e824e23329f2b78ddca1138157a);
+            
+        
+
+        marker_41dde7a7cbf0f53207291de8e978e8cc.bindPopup(popup_01577c5eb57165eb156aae30c8b362af)
+        ;
+
+        
+    
+    
+            var marker_3f6deb00d479ec13dafb9df1643ef39d = L.marker(
+                [55.9525, -3.1725],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_b6825d7490b72ccf593026031a23487b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3f6deb00d479ec13dafb9df1643ef39d.setIcon(icon_b6825d7490b72ccf593026031a23487b);
+        
+    
+        var popup_80e8693b3f1452b880cad5bf2761fb7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec6699ee5add53b4fd9186a4d386cc72 = $(`<div id="html_ec6699ee5add53b4fd9186a4d386cc72" style="width: 100.0%; height: 100.0%;"><b>Holyrood_Palace</b><br>Category: Historical</div>`)[0];
+                popup_80e8693b3f1452b880cad5bf2761fb7b.setContent(html_ec6699ee5add53b4fd9186a4d386cc72);
+            
+        
+
+        marker_3f6deb00d479ec13dafb9df1643ef39d.bindPopup(popup_80e8693b3f1452b880cad5bf2761fb7b)
+        ;
+
+        
+    
+    
+            var marker_0aac38c0a561276e6daea6e05160032b = L.marker(
+                [55.94694, -3.19],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_0ec056ce6f9b5d51b1cb8e48d9e6c355 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0aac38c0a561276e6daea6e05160032b.setIcon(icon_0ec056ce6f9b5d51b1cb8e48d9e6c355);
+        
+    
+        var popup_9275031d9693fa5d4366e7715f86e9e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3b351c13e86a10cb52afcb27e2411f5 = $(`<div id="html_c3b351c13e86a10cb52afcb27e2411f5" style="width: 100.0%; height: 100.0%;"><b>National_Museum_of_Scotland</b><br>Category: Museum</div>`)[0];
+                popup_9275031d9693fa5d4366e7715f86e9e4.setContent(html_c3b351c13e86a10cb52afcb27e2411f5);
+            
+        
+
+        marker_0aac38c0a561276e6daea6e05160032b.bindPopup(popup_9275031d9693fa5d4366e7715f86e9e4)
+        ;
+
+        
+    
+    
+            var marker_a45ed41af8512104886af2c6228dc4b2 = L.marker(
+                [55.952158, -3.175204],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_5cd3d1a8c00c42c90827fcf398637d55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a45ed41af8512104886af2c6228dc4b2.setIcon(icon_5cd3d1a8c00c42c90827fcf398637d55);
+        
+    
+        var popup_4c7ab59438474ea2c1f6167a8fa7a31c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cddda607ea1c4f01bea145069b48c833 = $(`<div id="html_cddda607ea1c4f01bea145069b48c833" style="width: 100.0%; height: 100.0%;"><b>Scottish_Parliament_Building</b><br>Category: Structure</div>`)[0];
+                popup_4c7ab59438474ea2c1f6167a8fa7a31c.setContent(html_cddda607ea1c4f01bea145069b48c833);
+            
+        
+
+        marker_a45ed41af8512104886af2c6228dc4b2.bindPopup(popup_4c7ab59438474ea2c1f6167a8fa7a31c)
+        ;
+
+        
+    
+    
+            var marker_98fc7fc6b1dd423a7c75944613f1f686 = L.marker(
+                [56.000421, -3.388726],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_9ad40c58185ee9f2dbfe64d5cc47e72c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_98fc7fc6b1dd423a7c75944613f1f686.setIcon(icon_9ad40c58185ee9f2dbfe64d5cc47e72c);
+        
+    
+        var popup_4999ded82e027eb1c00daa749b23bff7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e2923c135433c819800facf4abd2bac = $(`<div id="html_9e2923c135433c819800facf4abd2bac" style="width: 100.0%; height: 100.0%;"><b>Forth_Rail_Bridge</b><br>Category: Structure</div>`)[0];
+                popup_4999ded82e027eb1c00daa749b23bff7.setContent(html_9e2923c135433c819800facf4abd2bac);
+            
+        
+
+        marker_98fc7fc6b1dd423a7c75944613f1f686.bindPopup(popup_4999ded82e027eb1c00daa749b23bff7)
+        ;
+
+        
+    
+    
+            var marker_5af7bf6148c8a15c128f7cdb425a9d3b = L.marker(
+                [56.00083, -3.40417],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_1c71a88fc2a02812ec46f106c0869bd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5af7bf6148c8a15c128f7cdb425a9d3b.setIcon(icon_1c71a88fc2a02812ec46f106c0869bd7);
+        
+    
+        var popup_59b488a3c8a5fca968f9457a06254cb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_275ade84326449d0c4ba59bb2cb4c80a = $(`<div id="html_275ade84326449d0c4ba59bb2cb4c80a" style="width: 100.0%; height: 100.0%;"><b>Forth_Road_Bridge</b><br>Category: Structure</div>`)[0];
+                popup_59b488a3c8a5fca968f9457a06254cb1.setContent(html_275ade84326449d0c4ba59bb2cb4c80a);
+            
+        
+
+        marker_5af7bf6148c8a15c128f7cdb425a9d3b.bindPopup(popup_59b488a3c8a5fca968f9457a06254cb1)
+        ;
+
+        
+    
+    
+            var marker_beee3876cefda40ebf6ed0756ced1f59 = L.marker(
+                [55.94417, -3.16194],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_168eb219aa6a24321977367b798b73a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_beee3876cefda40ebf6ed0756ced1f59.setIcon(icon_168eb219aa6a24321977367b798b73a0);
+        
+    
+        var popup_ab37364b96b29d33b763178c11c50beb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05f40559476c818910236ff7b679deb9 = $(`<div id="html_05f40559476c818910236ff7b679deb9" style="width: 100.0%; height: 100.0%;"><b>Arthur%27s_Seat</b><br>Category: Park</div>`)[0];
+                popup_ab37364b96b29d33b763178c11c50beb.setContent(html_05f40559476c818910236ff7b679deb9);
+            
+        
+
+        marker_beee3876cefda40ebf6ed0756ced1f59.bindPopup(popup_ab37364b96b29d33b763178c11c50beb)
+        ;
+
+        
+    
+    
+            var marker_61aa9ecb1671dae98a12300565e571b8 = L.marker(
+                [55.952417, -3.193278],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_bf4ef20f7865f1f6a759c7a5705ce7b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_61aa9ecb1671dae98a12300565e571b8.setIcon(icon_bf4ef20f7865f1f6a759c7a5705ce7b5);
+        
+    
+        var popup_06a4f41e4e35bcc67a0767b6cb701c9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdead7f098a1733172a103639bd82e13 = $(`<div id="html_bdead7f098a1733172a103639bd82e13" style="width: 100.0%; height: 100.0%;"><b>Scott_Monument</b><br>Category: Historical</div>`)[0];
+                popup_06a4f41e4e35bcc67a0767b6cb701c9b.setContent(html_bdead7f098a1733172a103639bd82e13);
+            
+        
+
+        marker_61aa9ecb1671dae98a12300565e571b8.bindPopup(popup_06a4f41e4e35bcc67a0767b6cb701c9b)
+        ;
+
+        
+    
+    
+            var marker_2b38ed06ca21574bcd646b64adb24215 = L.marker(
+                [55.94944, -3.19083],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_bc4dcdfcc4b36bfc41a4eb6429d165fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b38ed06ca21574bcd646b64adb24215.setIcon(icon_bc4dcdfcc4b36bfc41a4eb6429d165fe);
+        
+    
+        var popup_d18024f592e8f2f51c1d440383cc9bca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_394cf987b45958c16a947a7989ade4a0 = $(`<div id="html_394cf987b45958c16a947a7989ade4a0" style="width: 100.0%; height: 100.0%;"><b>St_Giles%27_Cathedral</b><br>Category: Cultural</div>`)[0];
+                popup_d18024f592e8f2f51c1d440383cc9bca.setContent(html_394cf987b45958c16a947a7989ade4a0);
+            
+        
+
+        marker_2b38ed06ca21574bcd646b64adb24215.bindPopup(popup_d18024f592e8f2f51c1d440383cc9bca)
+        ;
+
+        
+    
+    
+            var marker_f8b23746410ebddf38ca74386ca496ba = L.marker(
+                [55.95528, -3.18222],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_81ce65dbd979031c21e7080dbc0dd83d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_f8b23746410ebddf38ca74386ca496ba.setIcon(icon_81ce65dbd979031c21e7080dbc0dd83d);
+        
+    
+        var popup_c7724243459d055a89feebbc0b954468 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea30ca6aa3649265b4eba14007a2f917 = $(`<div id="html_ea30ca6aa3649265b4eba14007a2f917" style="width: 100.0%; height: 100.0%;"><b>Calton_Hill</b><br>Category: Park</div>`)[0];
+                popup_c7724243459d055a89feebbc0b954468.setContent(html_ea30ca6aa3649265b4eba14007a2f917);
+            
+        
+
+        marker_f8b23746410ebddf38ca74386ca496ba.bindPopup(popup_c7724243459d055a89feebbc0b954468)
+        ;
+
+        
+    
+    
+            var marker_1a5af331ed65856d8ea1e66a33ed075e = L.marker(
+                [55.954722, -3.181806],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_6425ae88433c2aad0fe977e8a9e2b370 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a5af331ed65856d8ea1e66a33ed075e.setIcon(icon_6425ae88433c2aad0fe977e8a9e2b370);
+        
+    
+        var popup_02e74881235a80ddc2c1e3408daef72d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a676a39a5919af488d8b82fa9e8c9d0 = $(`<div id="html_1a676a39a5919af488d8b82fa9e8c9d0" style="width: 100.0%; height: 100.0%;"><b>National_Monument_of_Scotland</b><br>Category: Historical</div>`)[0];
+                popup_02e74881235a80ddc2c1e3408daef72d.setContent(html_1a676a39a5919af488d8b82fa9e8c9d0);
+            
+        
+
+        marker_1a5af331ed65856d8ea1e66a33ed075e.bindPopup(popup_02e74881235a80ddc2c1e3408daef72d)
+        ;
+
+        
+    
+    
+            var marker_07f11b8c61f09acbbddfb30e8932d1e4 = L.marker(
+                [55.94675, -3.2042],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_3b315dd44af7d063a5e6c8f3fc447dd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_07f11b8c61f09acbbddfb30e8932d1e4.setIcon(icon_3b315dd44af7d063a5e6c8f3fc447dd6);
+        
+    
+        var popup_01e2695b46aa0bc680c77e0e3d9f5b1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c727e85057e58eecd6f55509ba2e7e97 = $(`<div id="html_c727e85057e58eecd6f55509ba2e7e97" style="width: 100.0%; height: 100.0%;"><b>Usher_Hall</b><br>Category: Cultural</div>`)[0];
+                popup_01e2695b46aa0bc680c77e0e3d9f5b1d.setContent(html_c727e85057e58eecd6f55509ba2e7e97);
+            
+        
+
+        marker_07f11b8c61f09acbbddfb30e8932d1e4.bindPopup(popup_01e2695b46aa0bc680c77e0e3d9f5b1d)
+        ;
+
+        
+    
+    
+            var marker_25f839c3b265b112a8b7f910a98366af = L.marker(
+                [55.9467, -3.1861778],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_b1960fe5d803e8c32dd7221dfd6f920e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_25f839c3b265b112a8b7f910a98366af.setIcon(icon_b1960fe5d803e8c32dd7221dfd6f920e);
+        
+    
+        var popup_b14cb1883f57749595022fa2e2fc387d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ec36fe3dbecc32dc8d6c4414df3b08f = $(`<div id="html_1ec36fe3dbecc32dc8d6c4414df3b08f" style="width: 100.0%; height: 100.0%;"><b>Edinburgh_Festival_Theatre</b><br>Category: Cultural</div>`)[0];
+                popup_b14cb1883f57749595022fa2e2fc387d.setContent(html_1ec36fe3dbecc32dc8d6c4414df3b08f);
+            
+        
+
+        marker_25f839c3b265b112a8b7f910a98366af.bindPopup(popup_b14cb1883f57749595022fa2e2fc387d)
+        ;
+
+        
+    
+    
+            var marker_bfd72cc93766781b0016addfe3e1c34c = L.marker(
+                [55.9461083, -3.2096472],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_bf5f52896e3548d895f82e59cde1bdde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bfd72cc93766781b0016addfe3e1c34c.setIcon(icon_bf5f52896e3548d895f82e59cde1bdde);
+        
+    
+        var popup_15242788bfb4cfeea5871cb2917751a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba361b11e3340f5e01b985c407288069 = $(`<div id="html_ba361b11e3340f5e01b985c407288069" style="width: 100.0%; height: 100.0%;"><b>Edinburgh_International_Conference_Centre</b><br>Category: Structure</div>`)[0];
+                popup_15242788bfb4cfeea5871cb2917751a7.setContent(html_ba361b11e3340f5e01b985c407288069);
+            
+        
+
+        marker_bfd72cc93766781b0016addfe3e1c34c.bindPopup(popup_15242788bfb4cfeea5871cb2917751a7)
+        ;
+
+        
+    
+    
+            var marker_3f7a4e1219bf4e6ecb15b29634feb48a = L.marker(
+                [55.95175, -3.196389],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_9fc7b68973c0997f7c139d066fe13e13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3f7a4e1219bf4e6ecb15b29634feb48a.setIcon(icon_9fc7b68973c0997f7c139d066fe13e13);
+        
+    
+        var popup_a6406dcd9f0f3458362c068c7f6f701f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52e51d51f334e30dbfaea59505c26b26 = $(`<div id="html_52e51d51f334e30dbfaea59505c26b26" style="width: 100.0%; height: 100.0%;"><b>Royal_Scottish_Academy_Building</b><br>Category: Structure</div>`)[0];
+                popup_a6406dcd9f0f3458362c068c7f6f701f.setContent(html_52e51d51f334e30dbfaea59505c26b26);
+            
+        
+
+        marker_3f7a4e1219bf4e6ecb15b29634feb48a.bindPopup(popup_a6406dcd9f0f3458362c068c7f6f701f)
+        ;
+
+        
+    
+    
+            var marker_831543d424021ab5f2ea0acf65f436ac = L.marker(
+                [55.950917, -3.195667],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_e79efa72c21a51219f422639b3dec1f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_831543d424021ab5f2ea0acf65f436ac.setIcon(icon_e79efa72c21a51219f422639b3dec1f3);
+        
+    
+        var popup_b635c4bd1446331bd492b5ceccad6966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9cd8cc0eaa1a0f60ad98c7e7ec341a1 = $(`<div id="html_b9cd8cc0eaa1a0f60ad98c7e7ec341a1" style="width: 100.0%; height: 100.0%;"><b>Scottish_National_Gallery</b><br>Category: Museum</div>`)[0];
+                popup_b635c4bd1446331bd492b5ceccad6966.setContent(html_b9cd8cc0eaa1a0f60ad98c7e7ec341a1);
+            
+        
+
+        marker_831543d424021ab5f2ea0acf65f436ac.bindPopup(popup_b635c4bd1446331bd492b5ceccad6966)
+        ;
+
+        
+    
+    
+            var marker_e0690fc59794cd4278c5bb459a2bec7e = L.marker(
+                [55.94917, -3.19056],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_ff3ed44a952d7653d66735a78c1857e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e0690fc59794cd4278c5bb459a2bec7e.setIcon(icon_ff3ed44a952d7653d66735a78c1857e9);
+        
+    
+        var popup_9981714bbdbd4995d84197c856eed4e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5caeb718e8734ddd6c25c9067b0d82e9 = $(`<div id="html_5caeb718e8734ddd6c25c9067b0d82e9" style="width: 100.0%; height: 100.0%;"><b>Parliament_House,_Edinburgh</b><br>Category: Structure</div>`)[0];
+                popup_9981714bbdbd4995d84197c856eed4e9.setContent(html_5caeb718e8734ddd6c25c9067b0d82e9);
+            
+        
+
+        marker_e0690fc59794cd4278c5bb459a2bec7e.bindPopup(popup_9981714bbdbd4995d84197c856eed4e9)
+        ;
+
+        
+    
+    
+            var marker_a2031a207998d39e451a346a14d2e674 = L.marker(
+                [55.95005, -3.2029944],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_0d1dfb119825c6b6d91db8f84745a004 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a2031a207998d39e451a346a14d2e674.setIcon(icon_0d1dfb119825c6b6d91db8f84745a004);
+        
+    
+        var popup_40cbda32c41e95b5b2b9941059e43ace = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_142da049549430d273842dc73f343561 = $(`<div id="html_142da049549430d273842dc73f343561" style="width: 100.0%; height: 100.0%;"><b>Princes_Street_Gardens</b><br>Category: Park</div>`)[0];
+                popup_40cbda32c41e95b5b2b9941059e43ace.setContent(html_142da049549430d273842dc73f343561);
+            
+        
+
+        marker_a2031a207998d39e451a346a14d2e674.bindPopup(popup_40cbda32c41e95b5b2b9941059e43ace)
+        ;
+
+        
+    
+    
+            var marker_3d45fabe6381a6874f9e48da9201f891 = L.marker(
+                [55.9528694, -3.1895083],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_0023df3b34e02a0695df656dde8bfcda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3d45fabe6381a6874f9e48da9201f891.setIcon(icon_0023df3b34e02a0695df656dde8bfcda);
+        
+    
+        var popup_b6f9e1484db7e90f41a3fc2c08c1a3d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f596ed38beaf3c60cd081885029fbfc = $(`<div id="html_9f596ed38beaf3c60cd081885029fbfc" style="width: 100.0%; height: 100.0%;"><b>Balmoral_Hotel</b><br>Category: Structure</div>`)[0];
+                popup_b6f9e1484db7e90f41a3fc2c08c1a3d7.setContent(html_9f596ed38beaf3c60cd081885029fbfc);
+            
+        
+
+        marker_3d45fabe6381a6874f9e48da9201f891.bindPopup(popup_b6f9e1484db7e90f41a3fc2c08c1a3d7)
+        ;
+
+        
+    
+    
+            var marker_2dd75cb9227d928d2a558d4676c902db = L.marker(
+                [55.9656028, -3.2066611],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_8d71b7d65688100779de81c931f62a79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_2dd75cb9227d928d2a558d4676c902db.setIcon(icon_8d71b7d65688100779de81c931f62a79);
+        
+    
+        var popup_9c407e9bcc8c064ddb11825402ef61b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99b5818e281b26e003a2b028534a0c8a = $(`<div id="html_99b5818e281b26e003a2b028534a0c8a" style="width: 100.0%; height: 100.0%;"><b>Royal_Botanic_Garden_Edinburgh</b><br>Category: Park</div>`)[0];
+                popup_9c407e9bcc8c064ddb11825402ef61b1.setContent(html_99b5818e281b26e003a2b028534a0c8a);
+            
+        
+
+        marker_2dd75cb9227d928d2a558d4676c902db.bindPopup(popup_9c407e9bcc8c064ddb11825402ef61b1)
+        ;
+
+        
+    
+    
+            var marker_1d6df4acf27934f3dd35feead8e2b638 = L.marker(
+                [55.9781806, -3.1734667],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_0af86c3ace8394d266caf5120f464e9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1d6df4acf27934f3dd35feead8e2b638.setIcon(icon_0af86c3ace8394d266caf5120f464e9a);
+        
+    
+        var popup_526be00b2dee0db8fee621006b67c2f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0e73cc25562e9bfd08ada99f267caf4 = $(`<div id="html_f0e73cc25562e9bfd08ada99f267caf4" style="width: 100.0%; height: 100.0%;"><b>Victoria_Quay,_Scotland</b><br>Category: Structure</div>`)[0];
+                popup_526be00b2dee0db8fee621006b67c2f7.setContent(html_f0e73cc25562e9bfd08ada99f267caf4);
+            
+        
+
+        marker_1d6df4acf27934f3dd35feead8e2b638.bindPopup(popup_526be00b2dee0db8fee621006b67c2f7)
+        ;
+
+        
+    
+    
+            var marker_a5983976b6523c27c5c2138affb67d1b = L.marker(
+                [55.9525306, -3.2080167],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_3fceebbd1007e358a6981c74d96f2cd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a5983976b6523c27c5c2138affb67d1b.setIcon(icon_3fceebbd1007e358a6981c74d96f2cd0);
+        
+    
+        var popup_46de44ac73b78d229ed507569419f1fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b2c65cd10edaaf8ed50f7231a3b4779 = $(`<div id="html_6b2c65cd10edaaf8ed50f7231a3b4779" style="width: 100.0%; height: 100.0%;"><b>Bute_House</b><br>Category: Structure</div>`)[0];
+                popup_46de44ac73b78d229ed507569419f1fb.setContent(html_6b2c65cd10edaaf8ed50f7231a3b4779);
+            
+        
+
+        marker_a5983976b6523c27c5c2138affb67d1b.bindPopup(popup_46de44ac73b78d229ed507569419f1fb)
+        ;
+
+        
+    
+    
+            var marker_74540c239944222f8f84679fe9e59f3c = L.marker(
+                [55.953375, -3.1840972],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_d8c62fbab5b1b856a6966d6587119427 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_74540c239944222f8f84679fe9e59f3c.setIcon(icon_d8c62fbab5b1b856a6966d6587119427);
+        
+    
+        var popup_f0509c4454f2b39ea0efba8b70841932 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e27a2073718224ddac4632282693dc37 = $(`<div id="html_e27a2073718224ddac4632282693dc37" style="width: 100.0%; height: 100.0%;"><b>St_Andrew%27s_House</b><br>Category: Structure</div>`)[0];
+                popup_f0509c4454f2b39ea0efba8b70841932.setContent(html_e27a2073718224ddac4632282693dc37);
+            
+        
+
+        marker_74540c239944222f8f84679fe9e59f3c.bindPopup(popup_f0509c4454f2b39ea0efba8b70841932)
+        ;
+
+        
+    
+    
+            var marker_bd385329a9254d9af63a35951208e55c = L.marker(
+                [55.9505778, -3.1743694],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_cb0ea69d17c54f4310552f81c982fe5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_bd385329a9254d9af63a35951208e55c.setIcon(icon_cb0ea69d17c54f4310552f81c982fe5d);
+        
+    
+        var popup_5ede1e86b359fe76469d3a1f61306edc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9de8489b7b80c0af3001016d9a91b16a = $(`<div id="html_9de8489b7b80c0af3001016d9a91b16a" style="width: 100.0%; height: 100.0%;"><b>Our_Dynamic_Earth</b><br>Category: Entertainment</div>`)[0];
+                popup_5ede1e86b359fe76469d3a1f61306edc.setContent(html_9de8489b7b80c0af3001016d9a91b16a);
+            
+        
+
+        marker_bd385329a9254d9af63a35951208e55c.bindPopup(popup_5ede1e86b359fe76469d3a1f61306edc)
+        ;
+
+        
+    
+    
+            var marker_ce9f5ea4307cb822dbf039f39c86c175 = L.marker(
+                [55.9193361, -3.2383139],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_7e886c5ab8d3f99e396e259771eb1e6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce9f5ea4307cb822dbf039f39c86c175.setIcon(icon_7e886c5ab8d3f99e396e259771eb1e6a);
+        
+    
+        var popup_79e152c3f6fa5587cab055d63cdd1a5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60175d7eaf3ebdca7e21d710e599361f = $(`<div id="html_60175d7eaf3ebdca7e21d710e599361f" style="width: 100.0%; height: 100.0%;"><b>Craiglockhart_Castle</b><br>Category: Historical</div>`)[0];
+                popup_79e152c3f6fa5587cab055d63cdd1a5b.setContent(html_60175d7eaf3ebdca7e21d710e599361f);
+            
+        
+
+        marker_ce9f5ea4307cb822dbf039f39c86c175.bindPopup(popup_79e152c3f6fa5587cab055d63cdd1a5b)
+        ;
+
+        
+    
+    
+            var marker_b9fcc8e4bc7763b3ff72ea804ce32e08 = L.marker(
+                [55.94694, -3.19],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_e830bf41e21f2ad096e37c83a7622f2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b9fcc8e4bc7763b3ff72ea804ce32e08.setIcon(icon_e830bf41e21f2ad096e37c83a7622f2d);
+        
+    
+        var popup_febae74e9b1dcff0f382868e6157aa3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67bfc84244473b9fd071276c423ddad5 = $(`<div id="html_67bfc84244473b9fd071276c423ddad5" style="width: 100.0%; height: 100.0%;"><b>Royal_Museum</b><br>Category: Museum</div>`)[0];
+                popup_febae74e9b1dcff0f382868e6157aa3a.setContent(html_67bfc84244473b9fd071276c423ddad5);
+            
+        
+
+        marker_b9fcc8e4bc7763b3ff72ea804ce32e08.bindPopup(popup_febae74e9b1dcff0f382868e6157aa3a)
+        ;
+
+        
+    
+    
+            var marker_bbdab51a0d829de1d64237f56a63cc10 = L.marker(
+                [55.9508583, -3.2275639],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_15a930f7a3a67cfe5a61051e63cca592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bbdab51a0d829de1d64237f56a63cc10.setIcon(icon_15a930f7a3a67cfe5a61051e63cca592);
+        
+    
+        var popup_9add2b7374d0c399f157376551ec657e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_395ce5d40b5207984796775645e2ecb4 = $(`<div id="html_395ce5d40b5207984796775645e2ecb4" style="width: 100.0%; height: 100.0%;"><b>Scottish_National_Gallery_of_Modern_Art</b><br>Category: Museum</div>`)[0];
+                popup_9add2b7374d0c399f157376551ec657e.setContent(html_395ce5d40b5207984796775645e2ecb4);
+            
+        
+
+        marker_bbdab51a0d829de1d64237f56a63cc10.bindPopup(popup_9add2b7374d0c399f157376551ec657e)
+        ;
+
+        
+    
+    
+            var marker_43dd2558f20e21797b66957950244606 = L.marker(
+                [55.947389, -3.187194],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_d4893ce0ab122215c276f917b65cdd65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_43dd2558f20e21797b66957950244606.setIcon(icon_d4893ce0ab122215c276f917b65cdd65);
+        
+    
+        var popup_07d980d50bab3b4f6bd5233bbb67ac90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_504a129d8649d3692faa0dad3fd071a3 = $(`<div id="html_504a129d8649d3692faa0dad3fd071a3" style="width: 100.0%; height: 100.0%;"><b>Old_College,_University_of_Edinburgh</b><br>Category: Structure</div>`)[0];
+                popup_07d980d50bab3b4f6bd5233bbb67ac90.setContent(html_504a129d8649d3692faa0dad3fd071a3);
+            
+        
+
+        marker_43dd2558f20e21797b66957950244606.bindPopup(popup_07d980d50bab3b4f6bd5233bbb67ac90)
+        ;
+
+        
+    
+    
+            var marker_9d9ec4d1734e2cfee7594aea8c5012c9 = L.marker(
+                [55.9498, -3.1952],
+                {}
+            ).addTo(map_873c962b717873609007767420773838);
+        
+    
+            var icon_dd4f7f6bd50fa74bc3f4bf337f6eddcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9d9ec4d1734e2cfee7594aea8c5012c9.setIcon(icon_dd4f7f6bd50fa74bc3f4bf337f6eddcf);
+        
+    
+        var popup_8903ddec18b4a5233dcfaa29d3554e68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f52f6d4a08fc657764a026c0eaaf0bcc = $(`<div id="html_f52f6d4a08fc657764a026c0eaaf0bcc" style="width: 100.0%; height: 100.0%;"><b>New_College,_Edinburgh</b><br>Category: Structure</div>`)[0];
+                popup_8903ddec18b4a5233dcfaa29d3554e68.setContent(html_f52f6d4a08fc657764a026c0eaaf0bcc);
+            
+        
+
+        marker_9d9ec4d1734e2cfee7594aea8c5012c9.bindPopup(popup_8903ddec18b4a5233dcfaa29d3554e68)
+        ;
+
+        
+    
+</script>
+</html>
