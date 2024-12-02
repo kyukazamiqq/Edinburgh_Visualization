@@ -13,3 +13,4 @@ with open(html_file_path, "r", encoding="utf-8") as file:
 # Display the HTML content using Streamlit
 st.components.v1.html(html_content, height=600, scrolling=True)
 st.markdown("Terlihat bahwa di edinburgh tempat wisata terbanyak adalah Struktur bangunan yang ditandai oleh titik dengan warna oranye")
+
